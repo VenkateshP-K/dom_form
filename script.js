@@ -1,5 +1,6 @@
 //
 function foo(){
+  event.preventDefault();
 {
   var fir = document.getElementById("fname").value;
   var lna = document.getElementById("lname").value;
@@ -23,7 +24,8 @@ function foo(){
        }
      }
 }
-{   var bid = document.getElementById("tbd")
+{   
+var bid = document.getElementById("tbd")
 bid.innerHTML =`<table class="table">
 <tbody>
     <td>${fir}</td>
@@ -34,7 +36,8 @@ bid.innerHTML =`<table class="table">
     <td>${cbox2}</td>
     <td>${sta}</td>
     <td>${cty}</td>
-  </tbody>`
+  </tbody>
+  </table>`
 }
 }
 
@@ -44,14 +47,14 @@ table.className = "table";
 var thead = document.createElement('div');
 thead.innerHTML = `<table class="table">
 <thead class="thead-dark">
-    <th scope="col">First Name</th>
-    <th scope="col">Last Name</th>
-    <th scope="col">Address</th>
-    <th scope="col">Pincode</th>
-    <th scope="col">Gender</th>
-    <th scope="col">Food</th>
-    <th scope="col">State</th>
-    <th scope="col">Country</th>
+ <th scope="col">First Name</th>
+ <th scope="col">Last Name</th>
+ <th scope="col">Address</th>  
+ <th scope="col">Pincode</th>
+ <th scope="col">Gender</th>
+ <th scope="col">Food</th>
+ <th scope="col">State</th>
+ <th scope="col">Country</th>
 </thead>
 </table>`
 
